@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Blog</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <h1><a href="{{ url_for('index') }}">Simple Blog</a></h1>
+    <nav>
+      <a href="{{ url_for('admin') }}">Add Post</a> |
+      <form action="{{ url_for('search') }}" method="get" style="display:inline;">
+        <input type="text" name="q" placeholder="Search..." required>
+        <button type="submit">Go</button>
+      </form>
+    </nav>
+  </header>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>

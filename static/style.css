@@ -1,0 +1,24 @@
+body {
+  font-family: sans-serif;
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+header h1 a {
+  text-decoration: none;
+  color: #333;
+}
+nav {
+  margin-bottom: 20px;
+}
+nav form {
+  display: inline;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+li {
+  margin: 10px 0;
+}
